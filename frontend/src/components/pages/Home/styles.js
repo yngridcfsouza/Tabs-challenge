@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,6 @@ export const Header = styled.div`
   align-items: center;
 
   strong {
-    font-size: 24px;
     margin-bottom: 16px;
   }
 `;

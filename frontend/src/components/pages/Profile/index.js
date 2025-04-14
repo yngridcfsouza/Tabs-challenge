@@ -1,9 +1,11 @@
+import { Container } from './styles';
+
 import ProfileForm from "../../ProfileForm";
 import Home from "../Home";
 
 export default function Profile() {
   return (
-    <>
+    <Container>
       <Home />
 
       <strong>Meu perfil</strong>
@@ -11,6 +13,6 @@ export default function Profile() {
       <ProfileForm>
 
       </ProfileForm>
-      </>
+    </Container>
   );
 }

@@ -4,5 +4,8 @@ export default {
     background: '#bcbcbc',
     button: '#fff',
     menu: '#fff',
+    primary: {
+      main: '#ddd',
+    },
   },
 }

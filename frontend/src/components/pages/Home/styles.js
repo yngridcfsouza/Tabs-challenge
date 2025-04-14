@@ -13,10 +13,6 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  strong {
-    margin-bottom: 16px;
-  }
 `;
 
 export const NavLinks = styled.div`

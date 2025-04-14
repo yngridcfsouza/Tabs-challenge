@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <Container>
       <Header>
-        <strong>Menu</strong>
         <NavLinks>
           <Link to="/profile">Profile</Link>
           <Link to="/settings">Settings</Link>

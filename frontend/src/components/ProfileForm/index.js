@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import FormGroup from "../FormGroup";
 import { Form, ButtonContainer } from "./styles";
 
@@ -6,22 +8,57 @@ import Button from "../Button";
 import Select from "../Select";
 
 export default function ProfileForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [gender, setGender] = useState('');
+
+  function handleNameChange(event) {
+    setName(event.target.value);
+  }
+
+  function handleEmailChange(event) {
+    setEmail(event.target.value);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log({
+      name, email, phone, gender,
+    });
+  }
+
   return (
-    <Form>
+    <Form onSubmit={handleSubmit}>
       <FormGroup>
-        <Input placeholder="Nome"></Input>
+        <Input
+          value={name}
+          placeholder="Nome"
+          onChange={handleNameChange}
+         />
       </FormGroup>
 
       <FormGroup>
-        <Input placeholder="E-mail"></Input>
+        <Input
+          value={email}
+          placeholder="E-mail"
+          onChange={handleEmailChange}
+         />
       </FormGroup>
 
       <FormGroup>
-        <Input placeholder="Telefone"></Input>
+        <Input
+          value={phone}
+          placeholder="Telefone"
+          onChange={(event) => setPhone(event.target.value)}
+         />
       </FormGroup>
 
       <FormGroup>
-        <Select>
+        <Select
+          value={gender}
+          onChange={(event) => setGender(event.target.value)}
+        >
           <option value=''>Gênero</option>
           <option value='Feminino'>Feminino</option>
           <option value='Masculino'>Masculino</option>

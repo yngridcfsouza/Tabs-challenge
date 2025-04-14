@@ -10,7 +10,7 @@ export default function Profile() {
 
       <strong>Meu perfil</strong>
 
-      <ProfileForm>
+      <ProfileForm buttonLabel={'Editar perfil'}>
 
       </ProfileForm>
     </Container>

@@ -7,5 +7,8 @@ export default {
     primary: {
       main: '#ddd',
     },
+    danger: {
+      main: '#fc5050',
+    }
   },
 }
